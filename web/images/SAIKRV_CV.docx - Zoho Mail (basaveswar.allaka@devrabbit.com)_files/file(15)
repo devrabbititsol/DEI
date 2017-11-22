@@ -1,0 +1,1 @@
+{"status_code":400,"resource_name":"accounts","errors":[{"code":"PATTERN_NOT_MATCHED","resource":"accounts"}]}

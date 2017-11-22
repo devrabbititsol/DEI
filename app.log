@@ -1,0 +1,1472 @@
+2017-07-28 08:01:03 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:03 [183.82.106.91][-][-][info][application] $_GET = [
+    'product_type' => 'hire'
+    'category' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    'PHPSESSID' => '24ghl36p2tn9dopirm5ohturm0'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; PHPSESSID=24ghl36p2tn9dopirm5ohturm0; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41596'
+    'REDIRECT_QUERY_STRING' => 'product_type=hire&category=1'
+    'REDIRECT_URL' => '/dei/web/addproduct'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'product_type=hire&category=1'
+    'REQUEST_URI' => '/dei/web/addproduct?product_type=hire&category=1'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228863.638
+    'REQUEST_TIME' => 1501228863
+]
+2017-07-28 08:01:04 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:04 [183.82.106.91][-][-][info][application] $_GET = [
+    'category_id' => '1'
+    '_csrf' => 'C-qvSXTu0oWUi4S4VYgWXsJdgtMJ4aUNk4A-rzvTrkFXAbzOWhzT_sANc6gbH3SUnB8jNGgaQgE_MuC5lXjqsg=='
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    'PHPSESSID' => '24ghl36p2tn9dopirm5ohturm0'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; PHPSESSID=24ghl36p2tn9dopirm5ohturm0; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41596'
+    'REDIRECT_QUERY_STRING' => 'category_id=1&_csrf=C-qvSXTu0oWUi4S4VYgWXsJdgtMJ4aUNk4A-rzvTrkFXAbzOWhzT_sANc6gbH3SUnB8jNGgaQgE_MuC5lXjqsg%3D%3D'
+    'REDIRECT_URL' => '/dei/web/getproductsubcategories'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'category_id=1&_csrf=C-qvSXTu0oWUi4S4VYgWXsJdgtMJ4aUNk4A-rzvTrkFXAbzOWhzT_sANc6gbH3SUnB8jNGgaQgE_MuC5lXjqsg%3D%3D'
+    'REQUEST_URI' => '/dei/web/getproductsubcategories?category_id=1&_csrf=C-qvSXTu0oWUi4S4VYgWXsJdgtMJ4aUNk4A-rzvTrkFXAbzOWhzT_sANc6gbH3SUnB8jNGgaQgE_MuC5lXjqsg%3D%3D'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228864.073
+    'REQUEST_TIME' => 1501228864
+]
+2017-07-28 08:01:15 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:15 [183.82.106.91][-][-][info][application] $_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    'PHPSESSID' => '24ghl36p2tn9dopirm5ohturm0'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; PHPSESSID=24ghl36p2tn9dopirm5ohturm0; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41652'
+    'REDIRECT_URL' => '/dei/web/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/login'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228875.478
+    'REQUEST_TIME' => 1501228875
+]
+2017-07-28 08:01:20 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:20 [183.82.106.91][-][-][info][application] $_POST = [
+    '_csrf' => '-z7dh3ZV3G2gWxu2Y5hcoh_IXLMvCTDsBi90CCmRK6in1c4AWKfdFvTd7KYtDz5oQYr9VE7y1-CqnaoehzpvWw=='
+    'email' => 'basaveswar.allaka@devrabbit.com'
+    'password' => '123456789'
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    'PHPSESSID' => '24ghl36p2tn9dopirm5ohturm0'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '157'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://devrabbitdev.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; PHPSESSID=24ghl36p2tn9dopirm5ohturm0; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41674'
+    'REDIRECT_URL' => '/dei/web/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/login'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228880.643
+    'REQUEST_TIME' => 1501228880
+]
+2017-07-28 08:01:26 [183.82.106.91][1000][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:26 [183.82.106.91][1000][-][info][application] $_POST = [
+    '_csrf' => '-z7dh3ZV3G2gWxu2Y5hcoh_IXLMvCTDsBi90CCmRK6in1c4AWKfdFvTd7KYtDz5oQYr9VE7y1-CqnaoehzpvWw=='
+    'email' => 'basaveswar.allaka@devrabbit.com'
+    'password' => '987654321'
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    'PHPSESSID' => '24ghl36p2tn9dopirm5ohturm0'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1000
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '157'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://devrabbitdev.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; PHPSESSID=24ghl36p2tn9dopirm5ohturm0; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41695'
+    'REDIRECT_URL' => '/dei/web/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/login'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228886.223
+    'REQUEST_TIME' => 1501228886
+]
+2017-07-28 08:01:26 [183.82.106.91][1000][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:26 [183.82.106.91][1000][-][info][application] $_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1000
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41695'
+    'REDIRECT_URL' => '/dei/web/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/login'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228886.252
+    'REQUEST_TIME' => 1501228886
+]
+2017-07-28 08:01:26 [183.82.106.91][1000][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:26 [183.82.106.91][1000][-][info][application] $_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1000
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41695'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228886.267
+    'REQUEST_TIME' => 1501228886
+]
+2017-07-28 08:01:36 [183.82.106.91][1000][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:36 [183.82.106.91][1000][-][info][application] $_GET = [
+    'product_type' => 'hire'
+    'category' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1000
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41740'
+    'REDIRECT_QUERY_STRING' => 'product_type=hire&category=1'
+    'REDIRECT_URL' => '/dei/web/addproduct'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'product_type=hire&category=1'
+    'REQUEST_URI' => '/dei/web/addproduct?product_type=hire&category=1'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228896.521
+    'REQUEST_TIME' => 1501228896
+]
+2017-07-28 08:01:36 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:36 [183.82.106.91][-][-][info][application] $_GET = [
+    'category_id' => '1'
+    '_csrf' => 'k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ=='
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41740'
+    'REDIRECT_QUERY_STRING' => 'category_id=1&_csrf=k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ%3D%3D'
+    'REDIRECT_URL' => '/dei/web/getproductsubcategories'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'category_id=1&_csrf=k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ%3D%3D'
+    'REQUEST_URI' => '/dei/web/getproductsubcategories?category_id=1&_csrf=k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ%3D%3D'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228896.775
+    'REQUEST_TIME' => 1501228896
+]
+2017-07-28 08:01:39 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:39 [183.82.106.91][-][-][info][application] $_GET = [
+    'sub_category_id' => '1'
+    '_csrf' => 'k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ=='
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41740'
+    'REDIRECT_QUERY_STRING' => 'sub_category_id=1&_csrf=k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ%3D%3D'
+    'REDIRECT_URL' => '/dei/web/getsubcategorymodels'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'sub_category_id=1&_csrf=k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ%3D%3D'
+    'REQUEST_URI' => '/dei/web/getsubcategorymodels?sub_category_id=1&_csrf=k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ%3D%3D'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228899.112
+    'REQUEST_TIME' => 1501228899
+]
+2017-07-28 08:01:41 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:01:41 [183.82.106.91][-][-][info][application] $_POST = [
+    'capacity' => '2000'
+    'category_id' => '1'
+    '_csrf' => 'k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ=='
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '126'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://devrabbitdev.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '41740'
+    'REDIRECT_URL' => '/dei/web/getpackageamount'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/getpackageamount'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228901.85
+    'REQUEST_TIME' => 1501228901
+]
+2017-07-28 08:02:52 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:02:52 [183.82.106.91][-][-][info][application] $_FILES = [
+    'file' => [
+        'name' => 'dei_265751501224592'
+        'type' => 'application/octet-stream'
+        'tmp_name' => '/tmp/phpHnAsOz'
+        'error' => 0
+        'size' => 65306
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1000
+    'product_images' => [
+        0 => 'dei_166431501228972'
+    ]
+    'product_images_names' => [
+        0 => 'dei_265751501224592'
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '65513'
+    'HTTP_ACCEPT' => 'application/json'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'http://devrabbitdev.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryyUa3fHYQ2MoNpPK5'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '42046'
+    'REDIRECT_URL' => '/dei/web/uploadproductimages'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/uploadproductimages'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228972.563
+    'REQUEST_TIME' => 1501228972
+]
+2017-07-28 08:03:01 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:01 [183.82.106.91][-][-][info][application] $_FILES = [
+    'file' => [
+        'name' => 'dei_265751501224592'
+        'type' => 'application/octet-stream'
+        'tmp_name' => '/tmp/phpGxDR9D'
+        'error' => 0
+        'size' => 65306
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1000
+    'product_images' => [
+        0 => 'dei_166431501228972'
+    ]
+    'product_images_names' => [
+        0 => 'dei_265751501224592'
+    ]
+    'product_loadcharts' => [
+        0 => 'dei_load_chart58301501228981'
+    ]
+    'product_loadcharts_names' => [
+        0 => 'dei_265751501224592'
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '65513'
+    'HTTP_ACCEPT' => 'application/json'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'http://devrabbitdev.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary5mUZB0OtIVvPjRfp'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '42083'
+    'REDIRECT_URL' => '/dei/web/uploadproductloadcharts'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/uploadproductloadcharts'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228981.611
+    'REQUEST_TIME' => 1501228981
+]
+2017-07-28 08:03:07 [183.82.106.91][1022][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:07 [183.82.106.91][1022][-][info][application] $_COOKIE = [
+    'ip_country_code' => 'IN'
+    '_csrf' => 'd3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P¡í’9cYÆ8†ØŒq´ñùT×T¼œ5‚îñBŽÒï–\";}'
+    'ses_session_id' => '11001699'
+    'ses_token' => 'e09d8c3qhpy8824x6vsmxpvlgsng8s'
+    'LastUserName' => 'devacc1'
+    'notifii-_zldp' => 'qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4+6rVKckmoatH3+YStznSl/nNAVCWUwO'
+    '__utmt' => '1'
+    '__utma' => '179829553.544047588.1491730594.1501141617.1501228531.25'
+    '__utmb' => '179829553.1.10.1501228531'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'PHPSESSID' => 'q442uf3b0v5vtffohhq9ksjch1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1022
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fr;q=0.6,te;q=0.4,es;q=0.2'
+    'HTTP_COOKIE' => 'ip_country_code=IN; _csrf=d3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P%1D%A1%ED%929cY%0C%C68%86%D8%8Cq%B4%F1%F9T%D7T%BC%9C5%82%EE%F1B%8E%D2%EF%96%22%3B%7D; ses_session_id=11001699; ses_token=e09d8c3qhpy8824x6vsmxpvlgsng8s; LastUserName=devacc1; notifii-_zldp=qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4%2B6rVKckmoatH3%2BYStznSl%2FnNAVCWUwO; __utmt=1; __utma=179829553.544047588.1491730594.1501141617.1501228531.25; __utmb=179829553.1.10.1501228531; __utmc=179829553; __utmz=179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=q442uf3b0v5vtffohhq9ksjch1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '56564'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228987.474
+    'REQUEST_TIME' => 1501228987
+]
+2017-07-28 08:03:09 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:10 [183.82.106.91][-][-][warning][application] Undefined offset: 1
+    in /var/www/vhosts/notifii.com/dei/controllers/DeiController.php:523
+2017-07-28 08:03:09 [183.82.106.91][-][-][info][application] $_POST = [
+    '_csrf' => 'k2Yr2kJYsQKihq-5mQGfC6iA5Hk_07Ut2c-zPQQNN3bPjThdbKqwefYAWKnXlv3B9sJFnl4oUiF1fW0rqqZzhQ=='
+    'product_type' => '0'
+    'category_id' => '1'
+    'sub_category_id' => '1'
+    'capacity' => '2000'
+    'capacity_metric' => 'Tons'
+    'boom_length' => '444'
+    'equipment_title' => 'Crane for hire'
+    'model_id' => '1'
+    'model_other' => ''
+    'fly_jib' => '20'
+    'luffing_jib' => '20'
+    'registered_number' => 'Reg#123'
+    'bucket_capacity' => ''
+    'life_tax_details' => [
+        0 => '1'
+    ]
+    'condition' => ''
+    'manufacture_year' => '1981'
+    'price_type' => '1'
+    'hire_price' => '1500'
+    'sale_price' => ''
+    'kelly_length' => ''
+    'arm_length' => ''
+    'manufacturer' => ''
+    'numberof_axles' => ''
+    'dimensions' => '12x12x12'
+    'description' => 'Crane for hire desc'
+    'current_location' => 'Hyderabad, Telangana, India'
+    'google_place_id' => 'ChIJx9Lr6tqZyzsRwvu6koO3k64'
+    'street' => ''
+    'route' => ''
+    'city' => 'Hyderabad'
+    'state' => 'Telangana'
+    'zipcode' => ''
+    'country' => 'India'
+    'latitude' => '17.385044'
+    'longitude' => '78.486671'
+    'exact_location' => [
+        0 => 'India'
+    ]
+    'package_amount' => '0.00'
+    'package_type' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '792'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://devrabbitdev.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '42116'
+    'REDIRECT_URL' => '/dei/web/saveproduct'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/saveproduct'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228989.274
+    'REQUEST_TIME' => 1501228989
+]
+2017-07-28 08:03:10 [183.82.106.91][1000][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:10 [183.82.106.91][1000][-][info][application] $_GET = [
+    'product_type' => 'hire'
+    'category' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1000
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '42116'
+    'REDIRECT_QUERY_STRING' => 'product_type=hire&category=1'
+    'REDIRECT_URL' => '/dei/web/addproduct'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'product_type=hire&category=1'
+    'REQUEST_URI' => '/dei/web/addproduct?product_type=hire&category=1'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228990.224
+    'REQUEST_TIME' => 1501228990
+]
+2017-07-28 08:03:10 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:10 [183.82.106.91][-][-][info][application] $_GET = [
+    'category_id' => '1'
+    '_csrf' => 'H-HOmM25qNAOud3k17SfzeexEAhDVVGaulKnA5TrjttDCt0f40upq1o_KvSZI_0HufOx7yKutpYW4HkVOkDKKA=='
+]
+
+$_COOKIE = [
+    '_csrf' => '92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"\\ë‡.ò{T†÷N—bÊ^B¡çaûç¬²Þ®«Dó\";}'
+    'ip_country_code' => 'IN'
+    '__utma' => '179829553.1381737833.1501163495.1501163495.1501163495.1'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'notifii-_zldp' => 'qUyQioTAGQUjj/vBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX/PIBmqX0LH'
+    'notifii-_zldt' => '7a2abc60-cb47-4555-86a3-088d80d98687'
+    'PHPSESSID' => 'njjvl99ps33hf1nk7nlfocjsq7'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=92ba0c53eb7e4574c109481c6bfffabd6d3887c43de2bf5e9d6b55d52c3fd72ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%5C%EB%13%87.%F2%01%7BT%86%F7%10N%97b%CA%5EB%A1%E7a%FB%E7%0C%AC%B2%DE%16%AE%ABD%F3%22%3B%7D; ip_country_code=IN; __utma=179829553.1381737833.1501163495.1501163495.1501163495.1; __utmc=179829553; __utmz=179829553.1501163495.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); notifii-_zldp=qUyQioTAGQUjj%2FvBJQ4SpMpPGlrU04jONgLv61Lvg8Fa4R7k9DE4iX%2FPIBmqX0LH; notifii-_zldt=7a2abc60-cb47-4555-86a3-088d80d98687; PHPSESSID=njjvl99ps33hf1nk7nlfocjsq7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '42116'
+    'REDIRECT_QUERY_STRING' => 'category_id=1&_csrf=H-HOmM25qNAOud3k17SfzeexEAhDVVGaulKnA5TrjttDCt0f40upq1o_KvSZI_0HufOx7yKutpYW4HkVOkDKKA%3D%3D'
+    'REDIRECT_URL' => '/dei/web/getproductsubcategories'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'category_id=1&_csrf=H-HOmM25qNAOud3k17SfzeexEAhDVVGaulKnA5TrjttDCt0f40upq1o_KvSZI_0HufOx7yKutpYW4HkVOkDKKA%3D%3D'
+    'REQUEST_URI' => '/dei/web/getproductsubcategories?category_id=1&_csrf=H-HOmM25qNAOud3k17SfzeexEAhDVVGaulKnA5TrjttDCt0f40upq1o_KvSZI_0HufOx7yKutpYW4HkVOkDKKA%3D%3D'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228990.533
+    'REQUEST_TIME' => 1501228990
+]
+2017-07-28 08:03:16 [183.82.106.91][1022][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:16 [183.82.106.91][1022][-][info][application] $_GET = [
+    'product_type' => 'sale'
+    'category' => '5'
+]
+
+$_COOKIE = [
+    'ip_country_code' => 'IN'
+    '_csrf' => 'd3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P¡í’9cYÆ8†ØŒq´ñùT×T¼œ5‚îñBŽÒï–\";}'
+    'ses_session_id' => '11001699'
+    'ses_token' => 'e09d8c3qhpy8824x6vsmxpvlgsng8s'
+    'LastUserName' => 'devacc1'
+    'notifii-_zldp' => 'qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4+6rVKckmoatH3+YStznSl/nNAVCWUwO'
+    '__utmt' => '1'
+    '__utma' => '179829553.544047588.1491730594.1501141617.1501228531.25'
+    '__utmb' => '179829553.1.10.1501228531'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'PHPSESSID' => 'q442uf3b0v5vtffohhq9ksjch1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1022
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fr;q=0.6,te;q=0.4,es;q=0.2'
+    'HTTP_COOKIE' => 'ip_country_code=IN; _csrf=d3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P%1D%A1%ED%929cY%0C%C68%86%D8%8Cq%B4%F1%F9T%D7T%BC%9C5%82%EE%F1B%8E%D2%EF%96%22%3B%7D; ses_session_id=11001699; ses_token=e09d8c3qhpy8824x6vsmxpvlgsng8s; LastUserName=devacc1; notifii-_zldp=qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4%2B6rVKckmoatH3%2BYStznSl%2FnNAVCWUwO; __utmt=1; __utma=179829553.544047588.1491730594.1501141617.1501228531.25; __utmb=179829553.1.10.1501228531; __utmc=179829553; __utmz=179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=q442uf3b0v5vtffohhq9ksjch1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '56576'
+    'REDIRECT_QUERY_STRING' => 'product_type=sale&category=5'
+    'REDIRECT_URL' => '/dei/web/addproduct'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'product_type=sale&category=5'
+    'REQUEST_URI' => '/dei/web/addproduct?product_type=sale&category=5'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228996.061
+    'REQUEST_TIME' => 1501228996
+]
+2017-07-28 08:03:16 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:16 [183.82.106.91][-][-][info][application] $_GET = [
+    'category_id' => '5'
+    '_csrf' => 'lb00fBMEJtXTpzk4e0FBUWyhVlBG2RZRzMvSjnx0r83FoJWRgT1FjN9hAb6jzTDlnVgChxJlimROJSPM8qZAWw=='
+]
+
+$_COOKIE = [
+    'ip_country_code' => 'IN'
+    '_csrf' => 'd3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P¡í’9cYÆ8†ØŒq´ñùT×T¼œ5‚îñBŽÒï–\";}'
+    'ses_session_id' => '11001699'
+    'ses_token' => 'e09d8c3qhpy8824x6vsmxpvlgsng8s'
+    'LastUserName' => 'devacc1'
+    'notifii-_zldp' => 'qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4+6rVKckmoatH3+YStznSl/nNAVCWUwO'
+    '__utmt' => '1'
+    '__utma' => '179829553.544047588.1491730594.1501141617.1501228531.25'
+    '__utmb' => '179829553.1.10.1501228531'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'PHPSESSID' => 'q442uf3b0v5vtffohhq9ksjch1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=sale&category=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fr;q=0.6,te;q=0.4,es;q=0.2'
+    'HTTP_COOKIE' => 'ip_country_code=IN; _csrf=d3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P%1D%A1%ED%929cY%0C%C68%86%D8%8Cq%B4%F1%F9T%D7T%BC%9C5%82%EE%F1B%8E%D2%EF%96%22%3B%7D; ses_session_id=11001699; ses_token=e09d8c3qhpy8824x6vsmxpvlgsng8s; LastUserName=devacc1; notifii-_zldp=qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4%2B6rVKckmoatH3%2BYStznSl%2FnNAVCWUwO; __utmt=1; __utma=179829553.544047588.1491730594.1501141617.1501228531.25; __utmb=179829553.1.10.1501228531; __utmc=179829553; __utmz=179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=q442uf3b0v5vtffohhq9ksjch1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '56576'
+    'REDIRECT_QUERY_STRING' => 'category_id=5&_csrf=lb00fBMEJtXTpzk4e0FBUWyhVlBG2RZRzMvSjnx0r83FoJWRgT1FjN9hAb6jzTDlnVgChxJlimROJSPM8qZAWw%3D%3D'
+    'REDIRECT_URL' => '/dei/web/getproductsubcategories'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'category_id=5&_csrf=lb00fBMEJtXTpzk4e0FBUWyhVlBG2RZRzMvSjnx0r83FoJWRgT1FjN9hAb6jzTDlnVgChxJlimROJSPM8qZAWw%3D%3D'
+    'REQUEST_URI' => '/dei/web/getproductsubcategories?category_id=5&_csrf=lb00fBMEJtXTpzk4e0FBUWyhVlBG2RZRzMvSjnx0r83FoJWRgT1FjN9hAb6jzTDlnVgChxJlimROJSPM8qZAWw%3D%3D'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501228996.823
+    'REQUEST_TIME' => 1501228996
+]
+2017-07-28 08:03:20 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:20 [183.82.106.91][-][-][info][application] $_POST = [
+    '_csrf' => 'lb00fBMEJtXTpzk4e0FBUWyhVlBG2RZRzMvSjnx0r83FoJWRgT1FjN9hAb6jzTDlnVgChxJlimROJSPM8qZAWw=='
+]
+
+$_COOKIE = [
+    'ip_country_code' => 'IN'
+    '_csrf' => 'd3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P¡í’9cYÆ8†ØŒq´ñùT×T¼œ5‚îñBŽÒï–\";}'
+    'ses_session_id' => '11001699'
+    'ses_token' => 'e09d8c3qhpy8824x6vsmxpvlgsng8s'
+    'LastUserName' => 'devacc1'
+    'notifii-_zldp' => 'qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4+6rVKckmoatH3+YStznSl/nNAVCWUwO'
+    '__utmt' => '1'
+    '__utma' => '179829553.544047588.1491730594.1501141617.1501228531.25'
+    '__utmb' => '179829553.1.10.1501228531'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'PHPSESSID' => 'q442uf3b0v5vtffohhq9ksjch1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://devrabbitdev.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=sale&category=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fr;q=0.6,te;q=0.4,es;q=0.2'
+    'HTTP_COOKIE' => 'ip_country_code=IN; _csrf=d3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P%1D%A1%ED%929cY%0C%C68%86%D8%8Cq%B4%F1%F9T%D7T%BC%9C5%82%EE%F1B%8E%D2%EF%96%22%3B%7D; ses_session_id=11001699; ses_token=e09d8c3qhpy8824x6vsmxpvlgsng8s; LastUserName=devacc1; notifii-_zldp=qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4%2B6rVKckmoatH3%2BYStznSl%2FnNAVCWUwO; __utmt=1; __utma=179829553.544047588.1491730594.1501141617.1501228531.25; __utmb=179829553.1.10.1501228531; __utmc=179829553; __utmz=179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=q442uf3b0v5vtffohhq9ksjch1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '56576'
+    'REDIRECT_URL' => '/dei/web/logout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/logout'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501229000.248
+    'REQUEST_TIME' => 1501229000
+]
+2017-07-28 08:03:20 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:20 [183.82.106.91][-][-][info][application] $_COOKIE = [
+    'ip_country_code' => 'IN'
+    '_csrf' => 'd3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P¡í’9cYÆ8†ØŒq´ñùT×T¼œ5‚îñBŽÒï–\";}'
+    'ses_session_id' => '11001699'
+    'ses_token' => 'e09d8c3qhpy8824x6vsmxpvlgsng8s'
+    'LastUserName' => 'devacc1'
+    'notifii-_zldp' => 'qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4+6rVKckmoatH3+YStznSl/nNAVCWUwO'
+    '__utmt' => '1'
+    '__utma' => '179829553.544047588.1491730594.1501141617.1501228531.25'
+    '__utmb' => '179829553.1.10.1501228531'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'PHPSESSID' => 'i2h5fbclcc9mvr2mfd5nv3egm2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=sale&category=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fr;q=0.6,te;q=0.4,es;q=0.2'
+    'HTTP_COOKIE' => 'ip_country_code=IN; _csrf=d3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P%1D%A1%ED%929cY%0C%C68%86%D8%8Cq%B4%F1%F9T%D7T%BC%9C5%82%EE%F1B%8E%D2%EF%96%22%3B%7D; ses_session_id=11001699; ses_token=e09d8c3qhpy8824x6vsmxpvlgsng8s; LastUserName=devacc1; notifii-_zldp=qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4%2B6rVKckmoatH3%2BYStznSl%2FnNAVCWUwO; __utmt=1; __utma=179829553.544047588.1491730594.1501141617.1501228531.25; __utmb=179829553.1.10.1501228531; __utmc=179829553; __utmz=179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=i2h5fbclcc9mvr2mfd5nv3egm2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '56576'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501229000.268
+    'REQUEST_TIME' => 1501229000
+]
+2017-07-28 08:03:26 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:26 [183.82.106.91][-][-][info][application] $_GET = [
+    'product_type' => 'hire'
+    'category' => '1'
+]
+
+$_COOKIE = [
+    'ip_country_code' => 'IN'
+    '_csrf' => 'd3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P¡í’9cYÆ8†ØŒq´ñùT×T¼œ5‚îñBŽÒï–\";}'
+    'ses_session_id' => '11001699'
+    'ses_token' => 'e09d8c3qhpy8824x6vsmxpvlgsng8s'
+    'LastUserName' => 'devacc1'
+    'notifii-_zldp' => 'qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4+6rVKckmoatH3+YStznSl/nNAVCWUwO'
+    '__utmt' => '1'
+    '__utma' => '179829553.544047588.1491730594.1501141617.1501228531.25'
+    '__utmb' => '179829553.1.10.1501228531'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'PHPSESSID' => 'i2h5fbclcc9mvr2mfd5nv3egm2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fr;q=0.6,te;q=0.4,es;q=0.2'
+    'HTTP_COOKIE' => 'ip_country_code=IN; _csrf=d3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P%1D%A1%ED%929cY%0C%C68%86%D8%8Cq%B4%F1%F9T%D7T%BC%9C5%82%EE%F1B%8E%D2%EF%96%22%3B%7D; ses_session_id=11001699; ses_token=e09d8c3qhpy8824x6vsmxpvlgsng8s; LastUserName=devacc1; notifii-_zldp=qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4%2B6rVKckmoatH3%2BYStznSl%2FnNAVCWUwO; __utmt=1; __utma=179829553.544047588.1491730594.1501141617.1501228531.25; __utmb=179829553.1.10.1501228531; __utmc=179829553; __utmz=179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=i2h5fbclcc9mvr2mfd5nv3egm2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '56580'
+    'REDIRECT_QUERY_STRING' => 'product_type=hire&category=1'
+    'REDIRECT_URL' => '/dei/web/addproduct'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'product_type=hire&category=1'
+    'REQUEST_URI' => '/dei/web/addproduct?product_type=hire&category=1'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501229006.008
+    'REQUEST_TIME' => 1501229006
+]
+2017-07-28 08:03:26 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:26 [183.82.106.91][-][-][info][application] $_GET = [
+    'category_id' => '1'
+    '_csrf' => 'ZZQTKIVMl6k3C9dAm46yt6zJ9vXpTqQqsq-W-_oyax41ibLFF3X08DvN78ZDAsMDXTCiIr3yOB8wQWe5dOCEiA=='
+]
+
+$_COOKIE = [
+    'ip_country_code' => 'IN'
+    '_csrf' => 'd3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P¡í’9cYÆ8†ØŒq´ñùT×T¼œ5‚îñBŽÒï–\";}'
+    'ses_session_id' => '11001699'
+    'ses_token' => 'e09d8c3qhpy8824x6vsmxpvlgsng8s'
+    'LastUserName' => 'devacc1'
+    'notifii-_zldp' => 'qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4+6rVKckmoatH3+YStznSl/nNAVCWUwO'
+    '__utmt' => '1'
+    '__utma' => '179829553.544047588.1491730594.1501141617.1501228531.25'
+    '__utmb' => '179829553.1.10.1501228531'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'PHPSESSID' => 'i2h5fbclcc9mvr2mfd5nv3egm2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fr;q=0.6,te;q=0.4,es;q=0.2'
+    'HTTP_COOKIE' => 'ip_country_code=IN; _csrf=d3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P%1D%A1%ED%929cY%0C%C68%86%D8%8Cq%B4%F1%F9T%D7T%BC%9C5%82%EE%F1B%8E%D2%EF%96%22%3B%7D; ses_session_id=11001699; ses_token=e09d8c3qhpy8824x6vsmxpvlgsng8s; LastUserName=devacc1; notifii-_zldp=qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4%2B6rVKckmoatH3%2BYStznSl%2FnNAVCWUwO; __utmt=1; __utma=179829553.544047588.1491730594.1501141617.1501228531.25; __utmb=179829553.1.10.1501228531; __utmc=179829553; __utmz=179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=i2h5fbclcc9mvr2mfd5nv3egm2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '56580'
+    'REDIRECT_QUERY_STRING' => 'category_id=1&_csrf=ZZQTKIVMl6k3C9dAm46yt6zJ9vXpTqQqsq-W-_oyax41ibLFF3X08DvN78ZDAsMDXTCiIr3yOB8wQWe5dOCEiA%3D%3D'
+    'REDIRECT_URL' => '/dei/web/getproductsubcategories'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'category_id=1&_csrf=ZZQTKIVMl6k3C9dAm46yt6zJ9vXpTqQqsq-W-_oyax41ibLFF3X08DvN78ZDAsMDXTCiIr3yOB8wQWe5dOCEiA%3D%3D'
+    'REQUEST_URI' => '/dei/web/getproductsubcategories?category_id=1&_csrf=ZZQTKIVMl6k3C9dAm46yt6zJ9vXpTqQqsq-W-_oyax41ibLFF3X08DvN78ZDAsMDXTCiIr3yOB8wQWe5dOCEiA%3D%3D'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501229006.486
+    'REQUEST_TIME' => 1501229006
+]
+2017-07-28 08:03:34 [183.82.106.91][-][-][warning][yii\caching\FileCache::setValue] Unable to write cache file '/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin': file_put_contents(/var/www/vhosts/notifii.com/dei/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin): failed to open stream: Permission denied
+2017-07-28 08:03:34 [183.82.106.91][-][-][info][application] $_COOKIE = [
+    'ip_country_code' => 'IN'
+    '_csrf' => 'd3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"P¡í’9cYÆ8†ØŒq´ñùT×T¼œ5‚îñBŽÒï–\";}'
+    'ses_session_id' => '11001699'
+    'ses_token' => 'e09d8c3qhpy8824x6vsmxpvlgsng8s'
+    'LastUserName' => 'devacc1'
+    'notifii-_zldp' => 'qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4+6rVKckmoatH3+YStznSl/nNAVCWUwO'
+    '__utmt' => '1'
+    '__utma' => '179829553.544047588.1491730594.1501141617.1501228531.25'
+    '__utmb' => '179829553.1.10.1501228531'
+    '__utmc' => '179829553'
+    '__utmz' => '179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'PHPSESSID' => 'i2h5fbclcc9mvr2mfd5nv3egm2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'devrabbitdev.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://devrabbitdev.com/dei/web/addproduct?product_type=hire&category=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,fr;q=0.6,te;q=0.4,es;q=0.2'
+    'HTTP_COOKIE' => 'ip_country_code=IN; _csrf=d3d1afebb3763e097ffb407e8696416a6f50e833a9e9cbff249c85cc63681e48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22P%1D%A1%ED%929cY%0C%C68%86%D8%8Cq%B4%F1%F9T%D7T%BC%9C5%82%EE%F1B%8E%D2%EF%96%22%3B%7D; ses_session_id=11001699; ses_token=e09d8c3qhpy8824x6vsmxpvlgsng8s; LastUserName=devacc1; notifii-_zldp=qUyQioTAGQXewgCFL5A6uq75fEbdaOSz4%2B6rVKckmoatH3%2BYStznSl%2FnNAVCWUwO; __utmt=1; __utma=179829553.544047588.1491730594.1501141617.1501228531.25; __utmb=179829553.1.10.1501228531; __utmc=179829553; __utmz=179829553.1491730594.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=i2h5fbclcc9mvr2mfd5nv3egm2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at devrabbitdev.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'devrabbitdev.com'
+    'SERVER_ADDR' => '192.168.1.130'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '183.82.106.91'
+    'DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/vhosts/notifii.com'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/vhosts/notifii.com/dei/web/index.php'
+    'REMOTE_PORT' => '56582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dei/web/'
+    'SCRIPT_NAME' => '/dei/web/index.php'
+    'PHP_SELF' => '/dei/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501229014.88
+    'REQUEST_TIME' => 1501229014
+]

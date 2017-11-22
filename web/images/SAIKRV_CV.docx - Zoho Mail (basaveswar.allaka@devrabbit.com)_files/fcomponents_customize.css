@@ -1,0 +1,224 @@
+/* $Id$ */
+/* Feedback related css starts */
+.ui-dialog.ui-zfeedback .ui-dialog-title {
+  margin: 6px 16px 0px 0px!important;
+}
+.ui-dialog.ui-zfeedback a.ui-dialog-titlebar-close span {
+  box-sizing: border-box;
+}
+#ui-ztb-form-attach-container .ui-ztb-form-attach-header,
+#ui-ztb-form-attach-container .ui-ztb-form-attach-inner {
+  border-bottom: 0px;
+}
+#ui-zfb-form-others,
+#ui-ztb-form-attach-inner,
+#ui-ztb-form-attach-container .ui-ztb-form-attach-inner {
+  border-top: 1px solid #e7e7e7;
+}
+#ui-ztb-form-attach-container .ui-ztb-form-attach-inner {
+  max-height: 87px;
+}
+#ui-ztb-form-attach-container .ui-ztb-filename-container {
+  width: 50% !important;
+  height: 44px;
+  border-right: 1px solid #e7e7e7;
+}
+#ui-ztb-form-attach-container .ui-ztb-filename-container:not(:last-of-type) {
+  border-bottom: 1px solid #e7e7e7;
+}
+#ui-zfb-form-bottom,
+#ui-ztb-form-attach-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#ui-ztb-form-attach-container {
+  bottom: 41px;
+  border-top: 1px solid #e7e7e7;
+}
+#ui-zfeedback-dialog a.ui-dialog-titlebar-minimize {
+  right: 37px!important;
+  margin-top: -3px !important;
+  width: 19px !important;
+}
+#ui-zfb-form-others button {
+  background: #4190f2 !important;
+}
+#ui-zfb-form-top {
+  margin-top: 10px;
+}
+#ui-zfb-form-middle {
+  padding: 10px 0px;
+}
+#ui-zfb-form-top input {
+  width: calc(100%);
+  border: 1px solid #cccccc !important;
+  box-sizing: border-box !important;
+  height: 32px !important;
+  border-radius: 2px;
+  font-size: inherit;
+  padding: 3px 10px;
+}
+#ui-zfb-form-middle textarea {
+  height: calc(100% - 30px);
+  border: 1px solid #cccccc !important;
+  border-radius: 2px;
+  font-size: inherit;
+  padding: 10px;
+  font-family: proxima_nova_rgregular, open_sans_regular, sans-serif;
+}
+iframe#zwGShareIframe {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  margin: 0 auto;
+  top: 0px !important;
+  left: 0px !important;
+  border: 0px !important;
+  z-index: 1000;
+}
+/* END Feedback related css starts */
+/* ImageLibrqary related css starts */
+.library.ui-tabs-vertical .ui-tabs-nav {
+  margin-left: 0px!important;
+  border: 0px solid !important;
+}
+.library.ui-tabs-vertical .ui-tabs-nav {
+  height: 97%;
+  padding: 2px 7px 0 5px;
+  width: 230px !important;
+}
+.ui-dialog .ui-tabs.library .ui-tabs-panel {
+  border: 0px solid #dddfde !important;
+  border-left: 1px solid #dddfde !important;
+  margin-left: 24.3% !important;
+  width: 747px;
+  height: 425px;
+}
+.ui-lib-header {
+  background-color: #e1e1e1;
+  padding: 0px 19px 5px 3px;
+  border-bottom: 1px solid #e1e1e1;
+  height: 39px;
+}
+.ui-lib-header div span.ui-social-color-icon {
+  width: 100px !important;
+}
+.ui-lib-header div.ui-button {
+  height: 30px;
+  margin-right: 3px;
+  background-color: #F2F2F2 !important;
+  border: 1px solid #F2F2F2!important;
+}
+.ui-lib-header div.ui-button.ui-state-hover {
+  border: 1px solid #F2F2F2!important;
+  background-color: #F2F2F2 !important;
+}
+.ui-lib-header {
+  background-color: #F2F2F2;
+  padding: 0 3px 5px;
+  border-bottom: 1px solid #E1E1E1;
+  height: 39px;
+}
+.ui-lib-image ul {
+  float: left;
+  background-color: #ffffff;
+}
+.ui-lib-header div.ui-button {
+  height: 30px;
+  margin-right: 3px;
+  border: 1px solid #F2F2F2 !important;
+}
+.ui-lib-header div.ui-insimage-search {
+  margin-top: 5px;
+  background: #CECECE !important;
+}
+.ui-lib-image input.ui-lib-urlupload-input {
+  width: 510px;
+}
+.ui-social-color-icon.ui-icon {
+  height: 22px !important;
+}
+/*.zimagelist__image {
+	.ui-lib-img {
+		border-radius: 2px;
+	}
+	&.ui-state-hover, &.ui-state-active {
+		background: transparent;
+		border: 0px;
+		.ui-lib-img {
+			background: #e2e2e2;
+			border-color: #e2e2e2;
+		}
+	}
+}*/
+.ui-lib-urlupload-previewContainer {
+  padding: 5px;
+}
+/* END ImageLibrqary related css starts */
+/* FontLibrary related css starts */
+.ui-zfontlibrary .ui-dialog-titlebar-close.ui-dialog-titlebar-minimize {
+  display: none;
+}
+.ui-zfl-fonttype {
+  font-size: 14px;
+}
+#ui-zfl-container .ui-zfl-fonttype-content .ui-zfl-searchbox input[type="text"] {
+  height: 18px !important;
+}
+#ui-zfl-container .ui-zfl-fonttype-content .ui-zfl-searchbox input:focus {
+  border: 0px !important;
+}
+.ui-zfl-fontlist ul li {
+  line-height: 22px !important;
+}
+.ui-zfl-fontlist ul li span {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  float: right;
+  width: 14px !important;
+  height: 14px !important;
+  margin-top: 1px;
+}
+.ui-zfl-fontlist ul li a {
+  font-size: 15px !important;
+}
+.ui-zfl-searchbox .ui-zfc-icon-close {
+  left: 123px;
+  top: 24px;
+}
+.ui-zfl-myfontsContainer {
+  margin-top: -2px;
+}
+#ui-znc-recipients-list .ui-ztoken-icon-holder {
+  top: 8px;
+  margin: 0px !important;
+  border: none;
+}
+/* END FontLibrary related css starts */
+/* notify collaborator related css starts */
+#ui-znc-container #ui-znc-recipients-list-more {
+  top: 0px !important;
+  line-height: 12px !important;
+  height: 25px !important;
+}
+#ui-znc-recipients-list .ui-ztokens-token,
+#ui-znc-recipients-list .ui-ztoken-input,
+#ui-znc-recipients-list .ui-zcombo {
+  margin: 3px 5px 2px 0!important;
+  height: 25px !important;
+}
+/* END notify collaborator related css starts */
+/* fcomponents non-retina icons overwrite*/
+.ui-zfeedback .ui-icon-minus.ui-fcomponents-icon {
+  /*.nrbg-cs-pos(-20px -3560px);*/
+}
+/* END fcomponents non-retina icons overwrite*/
+/* Fcomponents retina icon overwrite css */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ui-zfeedback .ui-icon-minus.ui-fcomponents-icon {
+    /*.rbg-cs-pos(-18px -3385px);*/
+  }
+}
+/* END Fcomponents retina icon overwrite css */

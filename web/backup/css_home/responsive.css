@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 1600px) {
+.carousel-caption {
+	left: 12%;
+	right: 12%;
+}
+	
+.banner-bei .carousel-caption h2 {
+    font-size: 48px;
+}
+.bannerbtn {
+    top: 55%;
+}
+	/*********************** 1600 end ***************************/
+	
+}
+@media screen and (max-width: 1440px) {
+.carousel-caption {
+	left: 8%;
+	right: 8%;
+}
+	/*********************** 1440 end ***************************/
+}
+@media screen and (max-width: 1366px) {
+.carousel-caption {
+	left: 5%;
+	right: 5%;
+}
+.banner-bei .carousel-caption h2 {
+    font-size: 40px;
+}
+.bannerbtn {
+    top: 55%;
+}
+.banner-bei .carousel-caption h4 {
+    font-size: 20px;
+}
+	/*********************** 1366 end ***************************/
+}
+@media screen and (max-width: 1280px) {
+	/* banner */
+	.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+		min-height: 450px;
+	}
+	.banner-bei{
+	-webkit-clip-path: polygon(50% 450px, 100% 370px, 100% 0, 0 0, 0 370px);
+	-moz-clip-path: polygon(50% 450px, 100% 370px, 100% 0, 0 0, 0 370px);
+	-ms-clip-path: polygon(50% 450px, 100% 370px, 100% 0, 0 0, 0 370px);
+	-o-clip-path: polygon(50% 450px, 100% 370px, 100% 0, 0 0, 0 370px);
+	clip-path: polygon(50% 450px, 100% 370px, 100% 0, 0 0, 0 370px);
+	overflow: hidden;
+	
+	}
+	
+	/*********************** 1280 end ***************************/
+}
+@media screen and (max-width: 981px) {
+.clients img {
+    width: 100%;
+	margin-bottom: 20px;
+}
+	footer div .phone{
+		font-size: 20px;
+	}
+	footer div .email a{
+		font-size: 14px;
+	}
+	.footer-social li{
+		width: 40px;
+		height: 40px;
+		line-height: 35px;
+	}
+	.footer-social li a{
+		font-size: 19px;
+	}
+	.footer-bar{
+		font-size: 12px;
+	}
+	header ul.pull-right, header div.pull-right{float: none !important; display: inline-block;}
+	header{ text-align: center;}
+	header .navbar-header{ display: block; text-align: center !important; width: 100%;}
+	header .navbar-header .navbar-brand{ display: block; text-align: center !important; width: 100%;}
+	header .navbar-header .navbar-brand img{ margin: auto;}
+	/** machine **/
+	.machine-anim ul li img[src="images/aw.png"], .machine-anim ul li img[src="images/wa_static_box.png"], .machine-anim ul li img[src="images/exwaimg.png"]{width: 153px;}
+	.machine-anim .nav > li > a > img{width: 50px;}
+	.machine-anim ul li img[src="images/aw.png"]{top: 0px;}
+	.banner-bei .carousel-caption{padding: 10px;}
+	.banner-bei .carousel-caption h2 {
+    font-size: 30px;
+	}
+	.banner-bei .carousel-caption h4 {
+    font-size: 18px;
+	}
+	header .top-bar .con{
+	display: flex;
+	justify-content: center;
+	}
+	
+	/* banner */
+	.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+		min-height: 400px;
+	}
+	.banner-bei{
+	-webkit-clip-path: polygon(50% 400px, 100% 330px, 100% 0, 0 0, 0 330px);
+	-moz-clip-path: polygon(50% 400px, 100% 330px, 100% 0, 0 0, 0 330px);
+	-ms-clip-path: polygon(50% 400px, 100% 330px, 100% 0, 0 0, 0 330px);
+	-o-clip-path: polygon(50% 400px, 100% 330px, 100% 0, 0 0, 0 330px);
+	clip-path: polygon(50% 400px, 100% 330px, 100% 0, 0 0, 0 330px);
+	overflow: hidden;
+	
+	}
+	
+	/*********************** 980 end ***************************/
+}
+@media screen and (max-width: 750px) {
+	
+	/*********************** 750 end ***************************/
+}
+@media screen and (max-width: 640px) {
+header .navbar-header .navbar-brand {
+    display: inline-block;
+    text-align:left;
+    width: auto;
+}
+	.navbar-toggle{
+		margin-top: 30px;
+	}
+	.navbar-default .navbar-collapse .menu li a{
+		padding: 15px;
+	}
+	.banner-bei .carousel-caption h2 {
+    font-size: 28px;
+	}
+	.machine-anim ul li img[src="images/aw.png"], .machine-anim ul li img[src="images/wa_static_box.png"], .machine-anim ul li img[src="images/exwaimg.png"] {
+    width: 132px;
+	}
+	.machine-anim .tab-content ul li {
+    margin: 0 20px 0 0;
+	}
+	.postyourad .add-caption{
+		width: 90%;
+	}
+	#ourservices .carousel-control .glyphicon.glyphicon-menu-right {
+    right: 10px;
+}
+	#ourservices .carousel-control .glyphicon.glyphicon-menu-left {
+    left: 10px;
+}
+	.clients{
+		text-align: center;
+	}
+	.clients img {
+    width: 45%;
+		margin: 0px auto;
+		margin-bottom: 20px;
+}
+	footer div ul, footer div h3, .phone, .email, .footer-bar ul, .footer-bar div{
+	text-align: center;
+}
+	/*********************** 640 end ***************************/
+}
+@media screen and (max-width: 480px) {
+	.clients img {
+    width: 45%;
+		margin: 0px auto;
+		margin-bottom: 20px;
+}
+	header .top-bar ul {
+    margin-right: 0px;
+}
+	header .top-bar .con{
+	display: block;
+}
+	.top-bar .dropdown-menu{
+		left: 35%;
+	}
+	.banner-bei .carousel-caption h2 {
+    font-size: 20px;
+		margin: 5px 0px;
+}
+	.banner-bei .carousel-caption h4 {
+    font-size: 15px;
+}
+	.bannerbtn {
+    top: 40%;
+}
+	/* banner */
+	.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    min-height: 300px;
+}
+	.bannerbtn {
+    top: auto;
+		bottom: 35%;
+}
+	.banner-bei{
+	-webkit-clip-path: polygon(50% 300px, 100% 250px, 100% 0, 0 0, 0 250px);
+	-moz-clip-path: polygon(50% 300px, 100% 250px, 100% 0, 0 0, 0 250px);
+	-ms-clip-path: polygon(50% 300px, 100% 250px, 100% 0, 0 0, 0 250px);
+	-o-clip-path: polygon(50% 300px, 100% 250px, 100% 0, 0 0, 0 250px);
+	clip-path: polygon(50% 300px, 100% 250px, 100% 0, 0 0, 0 250px);
+	overflow: hidden;
+	position: relative;
+	}
+	.machine-anim:before{
+		background-color: #000;
+    content: "";
+    height: 60px;
+    left: 0;
+    position: absolute;
+    
+    width: 100%;
+    z-index: 0;
+	}
+	/* wheels */
+	.machine-anim .tab-content{
+		display: none;
+	}
+	img[src="images/exwaimg.png"], img[src="images/wa_static_box.png"]{
+		display: none;
+	}
+	.machine-anim ul li {
+    margin-top: 0px !important;
+}
+	.machine-anim {
+    margin-top: -120px;
+    position: relative;
+    z-index: 500;
+}
+	.mobwheel{
+		background-color: #000;
+		margin-top: 0px;
+    	position: relative;
+	}
+	.machine-anim ul{
+		text-align: center;
+	}
+	.machine-anim .nav-tabs li{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.machine-anim .nav-tabs li img[src="images/aw.png"]{
+		width: 150px;
+		left: calc(50% - 75px);
+	}
+	.add-caption{
+		width: 90%;
+	}
+	.clients img {
+    margin: 0 auto 20px;
+    width: 60%;
+}
+	
+	/*********************** 480 end ***************************/
+}
+@media screen and (max-width: 320px) {
+	.clients img {
+    margin: 0 auto 20px;
+    width: 100%;
+}
+	
+	header .navbar-header .navbar-brand {
+		float: left;
+		width: 75%;
+	}
+	header .navbar-header .navbar-brand img{
+		
+	}
+	.navbar-toggle {
+    margin-top: 12px;
+}
+	.bannerbtn{
+		bottom: 25%;
+		top: auto;
+	}
+	/*********************** 320 end ***************************/
+}
