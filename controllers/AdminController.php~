@@ -40,7 +40,7 @@ use yii\imagine\Image;
 class AdminController extends Controller
 {
     /**
-     ** @inheritdoc
+     #* @inheritdoc
      */
     public function behaviors()
     {
