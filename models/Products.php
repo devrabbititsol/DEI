@@ -1299,4 +1299,144 @@ class Products extends Model
                     ->all();
         return $products;
     }
+    
+    public static function get_products_by_employeeid($employeeid)
+    {
+        $query = new Query;
+        $products = $query->select(['core_products.*','core_product_categories.category_name','core_users.user_name as employee_name','status_users.user_name as status_updated_by'])
+                        ->from('core_products')
+                        ->innerJoin('core_product_categories', 'core_product_categories.category_id=core_products.category_id')
+                        ->leftJoin('core_users', 'core_products.employee_id=core_users.user_id')
+                        ->leftJoin('core_users as status_users', 'core_products.status_updated_by=status_users.user_id');
+        
+        $session = Yii::$app->session;
+        $role_details = $session->get('role');
+        $filteredemployees = array();
+        $view_employee_role = Yii::$app->db->createCommand("SELECT user_x_roles.user_role_id from user_x_roles where user_x_roles.user_id = $employeeid")->queryAll();
+        $view_employee_role = @$view_employee_role[0]['user_role_id'];
+        if($role_details['role_id'] == 2 || $role_details['role_id'] == 3 || $role_details['role_id'] == 8)//admin or superadmin or dataoperator
+        {
+            if($view_employee_role == 4)//zonal manager
+            {
+
+                $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id,user_x_roles.user_role_id from user_x_roles where user_x_roles.user_zone_id IN (SELECT user_zone_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+                foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+                if(in_array($employeeid, $filteredemployees))
+                {
+                    if($view_employee_role == 7)
+                        $products = $products->andWhere(['core_products.employee_id' => $employeeid]); 
+                    else
+                        $products = $products->andWhere(['core_products.employee_id' => $filteredemployees]); 
+                }
+                else
+                {
+                    return array();
+                }
+            }else if($view_employee_role == 5)//state manager
+            {
+                $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_state_id IN (SELECT user_state_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+                foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+
+                if(in_array($employeeid, $filteredemployees))
+                {
+                    if($view_employee_role == 7)
+                        $products = $products->andWhere(['core_products.employee_id' => $employeeid]); 
+                    else
+                        $products = $products->andWhere(['core_products.employee_id' => $filteredemployees]); 
+                }
+                else
+                {
+                    return array();
+                }
+
+            }else if($view_employee_role == 6)//district manager
+            {
+                $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_district_id IN (SELECT user_district_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+                foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+                if(in_array($employeeid, $filteredemployees))
+                {
+                    if($view_employee_role == 7)
+                        $products = $products->andWhere(['core_products.employee_id' => $employeeid]); 
+                    else
+                        $products = $products->andWhere(['core_products.employee_id' => $filteredemployees]);  
+                }
+                else
+                {
+                    return array();
+                }
+            }else if($view_employee_role == 7)//sales executive
+            {
+                $products = $products->andWhere(['core_products.employee_id' => $employeeid]);  
+            }
+            else
+            {
+                return array();
+            }
+        }
+        else if($role_details['role_id'] == 4)//zonal manager
+        {
+
+
+            $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id,user_x_roles.user_role_id from user_x_roles where user_x_roles.user_zone_id IN (SELECT user_zone_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+            foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+            if(in_array($employeeid, $filteredemployees))
+            {
+                if($view_employee_role == 7)
+                    $products = $products->andWhere(['core_products.employee_id' => $employeeid]); 
+                else
+                    $products = $products->andWhere(['core_products.employee_id' => $filteredemployees]); 
+            }
+            else
+            {
+                return array();
+            }
+        }else if($role_details['role_id'] == 5)//state manager
+        {
+            $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_state_id IN (SELECT user_state_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+            foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+
+            if(in_array($employeeid, $filteredemployees))
+            {
+                if($view_employee_role == 7)
+                    $products = $products->andWhere(['core_products.employee_id' => $employeeid]); 
+                else
+                    $products = $products->andWhere(['core_products.employee_id' => $filteredemployees]); 
+            }
+            else
+            {
+                return array();
+            }
+
+        }else if($role_details['role_id'] == 6)//district manager
+        {
+            $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_district_id IN (SELECT user_district_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+            foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+            if(in_array($employeeid, $filteredemployees))
+            {
+                if($view_employee_role == 7)
+                    $products = $products->andWhere(['core_products.employee_id' => $employeeid]); 
+                else
+                    $products = $products->andWhere(['core_products.employee_id' => $filteredemployees]);  
+            }
+            else
+            {
+                return array();
+            }
+        }
+        return $products = $products->groupBy(['core_products.product_id'])->orderBy(['core_products.date_created' => SORT_DESC])->all();
+    }
+    
+    public static function get_product_payment_by_id($product_id)
+    {
+        $query = new Query;
+        return $productdata = $query->select(['core_products.*','core_product_categories.category_name','core_product_sub_categories.sub_category_name', 'core_product_models.model_name', 'core_payments.payment_status'])
+                                    ->from('core_products')
+                                    ->innerJoin('core_product_categories', 'core_product_categories.category_id=core_products.category_id')
+                                    ->innerJoin('core_product_sub_categories', 'core_product_sub_categories.sub_category_id=core_products.sub_category_id')
+                                    ->innerJoin('core_product_models', 'core_product_models.model_id=core_products.model_id')
+                                    ->innerJoin('core_payments', 'core_payments.payment_for=core_products.product_id AND core_payments.payment_type=1')
+                                    ->groupBy(['core_products.product_id'])
+                                    ->where("core_products.product_id = $product_id")
+                                    ->one();
+    }
 }

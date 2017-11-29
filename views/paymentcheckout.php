@@ -25,7 +25,8 @@
             <tr>
                 <td></td><td>
                     <strong>* <?php echo Yii::$app->params['GST']; ?>% GST will be charged for this transaction.</strong><br/>
-                    <input class="btn btn-default" type="submit" value="CheckOut"><a class="btn btn-default" href="<?= Yii::$app->params['SITE_URL'] ?>">cancel</a></td>
+                    <input class="btn btn-default" type="submit" value="CheckOut">
+                    <a class="btn btn-default" href="<?= @$params['cancel_url'] ?>">cancel</a></td>
             </tr>
         </tbody>
     </table>

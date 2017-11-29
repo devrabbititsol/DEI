@@ -644,4 +644,124 @@ class Ads extends Model
         $ads = $ads->where("core_post_ads.user_id = $userid")->orderBy(['core_post_ads.date_created' => SORT_DESC])->All();
         return $ads;
     }
+    
+    public static function get_ads_by_employeeid($employeeid)
+    {
+        $query = new Query;
+        $ads = $query->select(['core_post_ads.*','core_users.user_name as employee_name','status_users.user_name as status_updated_by'])
+                     ->from('core_post_ads')
+                     ->leftJoin('core_users', 'core_post_ads.employee_id=core_users.user_id')
+                     ->leftJoin('core_users as status_users', 'core_post_ads.status_updated_by=status_users.user_id');
+        $session = Yii::$app->session;
+        $role_details = $session->get('role');
+        $view_employee_role = Yii::$app->db->createCommand("SELECT user_x_roles.user_role_id from user_x_roles where user_x_roles.user_id = $employeeid")->queryAll();
+        $view_employee_role = @$view_employee_role[0]['user_role_id'];
+        $filteredemployees = array();
+        if($role_details['role_id'] == 2 || $role_details['role_id'] == 3 || $role_details['role_id'] == 8)//admin or superadmin or dataoperator
+        {
+            if($view_employee_role == 4)//zonal manager
+            {
+                $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_zone_id IN (SELECT user_zone_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+                foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+                if(in_array($employeeid, $filteredemployees))
+                {
+                    if($view_employee_role == 7)
+                        $ads = $ads->where(['core_post_ads.employee_id' => $employeeid]); 
+                    else
+                        $ads = $ads->where(['core_post_ads.employee_id' => $filteredemployees]); 
+                }
+                else
+                {
+                    return array();
+                }
+
+            }else if($view_employee_role == 5)//state manager
+            {
+                $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_state_id IN (SELECT user_state_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+                foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+                if(in_array($employeeid, $filteredemployees))
+                {
+                    if($view_employee_role == 7)
+                        $ads = $ads->where(['core_post_ads.employee_id' => $employeeid]); 
+                    else
+                        $ads = $ads->where(['core_post_ads.employee_id' => $filteredemployees]); 
+                }
+                else
+                {
+                    return array();
+                }
+            }else if($view_employee_role == 6)//district manager
+            {
+                $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_district_id IN (SELECT user_district_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+                foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+                if(in_array($employeeid, $filteredemployees))
+                {
+                    if($view_employee_role == 7)
+                        $ads = $ads->where(['core_post_ads.employee_id' => $employeeid]); 
+                    else
+                        $ads = $ads->where(['core_post_ads.employee_id' => $filteredemployees]); 
+                }
+                else
+                {
+                    return array();
+                }
+            }else if($view_employee_role == 7)//sales executive
+            {
+                $ads = $ads->where(['core_post_ads.employee_id' => $employeeid]); 
+            }
+            else
+            {
+                return array();
+            }
+        }
+        else if($role_details['role_id'] == 4)//zonal manager
+        {
+            $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_zone_id IN (SELECT user_zone_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+            foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+            if(in_array($employeeid, $filteredemployees))
+            {
+                if($view_employee_role == 7)
+                    $ads = $ads->where(['core_post_ads.employee_id' => $employeeid]); 
+                else
+                    $ads = $ads->where(['core_post_ads.employee_id' => $filteredemployees]); 
+            }
+            else
+            {
+                return array();
+            }
+            
+        }else if($role_details['role_id'] == 5)//state manager
+        {
+            $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_state_id IN (SELECT user_state_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+            foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+            if(in_array($employeeid, $filteredemployees))
+            {
+                if($view_employee_role == 7)
+                    $ads = $ads->where(['core_post_ads.employee_id' => $employeeid]); 
+                else
+                    $ads = $ads->where(['core_post_ads.employee_id' => $filteredemployees]); 
+            }
+            else
+            {
+                return array();
+            }
+        }else if($role_details['role_id'] == 6)//district manager
+        {
+            $underthiszoneusers = Yii::$app->db->createCommand("SELECT user_x_roles.user_id from user_x_roles where user_x_roles.user_district_id IN (SELECT user_district_id from user_x_roles where user_x_roles.user_id = $employeeid) GROUP BY user_id")->queryAll();
+            foreach($underthiszoneusers as $employee_id) $filteredemployees[] = $employee_id['user_id'];
+            if(in_array($employeeid, $filteredemployees))
+            {
+                if($view_employee_role == 7)
+                    $ads = $ads->where(['core_post_ads.employee_id' => $employeeid]); 
+                else
+                    $ads = $ads->where(['core_post_ads.employee_id' => $filteredemployees]); 
+            }
+            else
+            {
+                return array();
+            }
+        }
+        $ads = $ads->orderBy(['core_post_ads.date_created' => SORT_DESC])->All();
+        return $ads;
+    }
 }

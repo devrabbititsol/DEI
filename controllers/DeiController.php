@@ -99,6 +99,7 @@ class DeiController extends Controller
     
     public function actionIndex()
     {
+        
         //get Products count by their category
         $cranescount = Products::select_product_count_by_category_id(1);
         $dumperscount = Products::select_product_count_by_category_id(2);
@@ -876,7 +877,15 @@ class DeiController extends Controller
                     //send email to current user
                     Mail_settings::send_email_notification($email,$subject,$message);
                 }
-                
+                //get admin email
+                $email = Yii::$app->params['ADMIN_EMAIL'];
+                $subject="BIG EQUIPMENTS INDIA | New Equipment Registered";
+                $product_details = Products::get_product_payment_by_id($session->get('current_product_id'));
+                //get what message to send after creating product
+                $message = Mail_settings::get_product_add_message_to_admin($product_details);
+
+                //send email to admin
+                Mail_settings::send_email_notification($email,$subject,$message);
                 //empty current product id session value
                 $session->set('current_product_id', '');
                 
@@ -902,16 +911,30 @@ class DeiController extends Controller
             {
                 //update transaction details
                 $response = Yii::$app->request->bodyParams;
-                $transaction_data = Payments::decrypt_response($response);
-                
-                if(!empty($transaction_data))
+                if($response)
                 {
-                    Payments::update_transaction($transaction_data);
+                    $transaction_data = Payments::decrypt_response($response);
+
+                    if(!empty($transaction_data))
+                    {
+                        Payments::update_transaction($transaction_data);
+                    }
                 }
                 $productdata = Products::find()->where(['product_id' => $session->get('current_product_id')])->one(); 
                 
+                //get admin email
+                $email = Yii::$app->params['ADMIN_EMAIL'];
+                $subject="BIG EQUIPMENTS INDIA | New Equipment Registered";
+                $product_details = Products::get_product_payment_by_id($session->get('current_product_id'));
+                //get what message to send after creating product
+                $message = Mail_settings::get_product_add_message_to_admin($product_details);
+
+                //send email to admin
+                Mail_settings::send_email_notification($email,$subject,$message);
+                
                 //empty current product id session value
                 $session->set('current_product_id', '');
+                
                 
                 return $this->render('//productcancelmessage', array('productdata' => $productdata,'transaction_data' => $transaction_data));
             }

@@ -1361,8 +1361,16 @@ class AdminController extends Controller
         return $this->redirect(['admin/index'])->send();
         }
         $employee = User::get_employee_details_by_id($id);      
+        
+        $products = Products::get_products_by_employeeid($id);  
+        
+        $orders = Productorder::get_orders_by_employeeid($id);
+        
+        $ads = Ads::get_ads_by_employeeid($id);
+        
+        $quotes = Getquote::get_quotes_by_employeeid($id);
         //print_r($employee);exit;
-        echo $this->render('//admin/employees/viewemployee', array('employee' => $employee));
+        echo $this->render('//admin/employees/viewemployee', array('employee' => $employee,'products' => $products,'orders' => $orders,'ads' => $ads,'quotes' => $quotes));
     }
     
     # Edit Employee details

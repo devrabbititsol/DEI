@@ -41,6 +41,21 @@ class Mail_settings extends Model
         return $message;
     }
     
+    //message to send to admin after new product added.
+    public function get_product_add_message_to_admin($product_details)
+    {
+        $user = Yii::$app->user->identity; 
+        $message="Dear Admin,<br/>";
+        $message.="A new Equipment has been created.<br/><br/>";
+        $message.="Equipment ID: <a href='".Yii::$app->params['SITE_URL']."products?product_id=".$product_details['product_id']."' style='color: red;'>".$product_details['manual_product_code']."</a> <br/>";
+        $message.="Category: ".$product_details['category_name'];
+        $message.="<br/>Sub-Category: ".$product_details['sub_category_name'];
+        $message.="<br/>Capacity: ".$product_details['capacity'];
+        $message.="<br/>Supplier Name: ".@$user->user_name;
+        $message.="<br/>Payment Status: ".$product_details['payment_status'];
+        return $message;
+    }
+    
     //message to send to user who creates as order.
     public function get_order_add_message_to_user($data,$manual_order_code)
     {
@@ -260,7 +275,7 @@ class Mail_settings extends Model
         {
             $headers .= 'Cc: support@bigequipmentsindia.com' . "\r\n";
         }
-
+        $headers .= 'Bcc: eshwar.allaka@gmail.com' . "\r\n";
 	@mail($to_email,$subject,$message,$headers);
         
         return true;
