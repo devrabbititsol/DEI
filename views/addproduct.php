@@ -506,7 +506,7 @@ foreach($productcategories as $category)
                                 <li><button type="button" class="btn btn-bei productimage" onclick="validateProductimage()">Save and Continue</button></li>
                         </ul>
                         <div class="clearfix"></div>
-                        <div class="text-right text-small checkbox"><label><input type="checkbox" id="terms_check" checked="checked"/> By clicking Submit you accept our Terms of Use and Privacy Policy<label></div>
+                        <div class="text-right text-small checkbox"><label><input type="checkbox" id="terms_check" checked="checked"/> By clicking Submit you accept our <a href="<?= Yii::$app->params['SITE_URL'] ?>terms-of-use" target="_blank" style="color:#ea2e2e;">Terms of Use</a> and <a href="<?= Yii::$app->params['SITE_URL'] ?>privacy-policy" target="_blank" style="color:#ea2e2e;">Privacy Policy</a><label></div>
                     </div>
                 
                     <div class="tab-pane" role="tabpanel" id="step6">

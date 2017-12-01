@@ -127,13 +127,13 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="main_inner_head text-normal">
-                                                <h3> How much capacity you Need?</h3>
+                                                <h3> What Capacity?</h3>
                                             </div>
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="radio">
-                                                            <input type="text" id="capacity" name="capacity" class="form-control" placeholder="Capacity*" required="required" onKeyUp="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" />
+                                                            <input type="text" id="capacity_requested" name="capacity_requested" class="form-control" placeholder="Capacity*" required="required" onKeyUp="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" />
                                                             <input type="hidden" id="capacity_metric" name="capacity_metric" value="">
                                                         </div>
                                                     </div>

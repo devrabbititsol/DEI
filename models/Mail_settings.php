@@ -52,7 +52,6 @@ class Mail_settings extends Model
         $message.="<br/>Sub-Category: ".$product_details['sub_category_name'];
         $message.="<br/>Capacity: ".$product_details['capacity'];
         $message.="<br/>Supplier Name: ".@$user->user_name;
-        $message.="<br/>Payment Status: ".$product_details['payment_status'];
         return $message;
     }
     
@@ -159,7 +158,7 @@ class Mail_settings extends Model
                 . "<strong>Purpose of Quote : </strong>".$quote_details['quotation_type']."<br/>"
                 . "<strong>Category : </strong>".$category['category_name']."<br/>"
                 . "<strong>Sub category : </strong>".$subcategory['sub_category_name']."<br/>"
-                . "<strong>Capacity : </strong>".$quote_details['capacity']."<br/>"
+                . "<strong>Capacity : </strong>".$quote_details['capacity_requested']."<br/>"
                 . "<strong>Location : </strong>".$quote_details['location']."<br/>"
                 . "<strong>What Best Describes Your Job? : </strong>". str_replace('_', ' ', $quote_details['job_describes']) ."<br/>"
                 . "<strong>Start Date : </strong>".$quote_details['start_date']."<br/>";
@@ -275,8 +274,7 @@ class Mail_settings extends Model
         {
             $headers .= 'Cc: support@bigequipmentsindia.com' . "\r\n";
         }
-        $headers .= 'Bcc: eshwar.allaka@gmail.com' . "\r\n";
-	@mail($to_email,$subject,$message,$headers);
+        @mail($to_email,$subject,$message,$headers);
         
         return true;
     }

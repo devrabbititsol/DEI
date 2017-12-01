@@ -78,7 +78,7 @@
                                     <div class="form-group">
                                         <label class="col-sm-5 control-label">Capacity: </label>
                                         <div class="col-sm-7">
-                                            <strong> <?= $quote_details['capacity'] ?></strong>
+                                            <strong> <?= $quote_details['capacity_requested'] ?></strong>
                                         </div>
                                     </div>
                                     <div class="form-group">

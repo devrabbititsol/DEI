@@ -1,7 +1,7 @@
 <?php
 
 $params = require(__DIR__ . '/params.php');
-$db = require(__DIR__ . '/db.php');
+#$db = require(__DIR__ . '/db.php');
 $functions = require(__DIR__ . '/functions.php');
 
 
@@ -16,8 +16,7 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'HcaQILD9OchswVYbhCf4Jrlue8gBORzw',
-            'enableCookieValidation' => false,
-            //'baseUrl' => 'localhost/dei/web/index.php/',
+            'enableCookieValidation' => false, 
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -51,7 +50,13 @@ $config = [
                 ],
             ],
         ],
-        'db' => $db,
+        'db' => [
+                    'class' => 'yii\db\Connection',
+                    'dsn' => 'mysql:host=localhost;dbname=dei_db',
+                    'username' => 'bei_admin',
+                    'password' => 'ka1La5a$',
+                    'charset' => 'utf8',
+                ],
         //disable jquery loading form yii
         'assetManager' => [
             'bundles' => [
@@ -62,6 +67,7 @@ $config = [
         ],
         
         'urlManager' => [
+            'class' => 'yii\web\UrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
@@ -69,10 +75,7 @@ $config = [
                 'admin' => 'admin/index',
                 'admin/<action:(.*)>' => 'admin/<action>',
                 'admin/<action:(.*)/<id:\d+>'=>'admin/<action>',
-                '<action:[\s\S]*>/<product_type:[\s\S]*>/<category:[\s\S]*>' => 'dei/<action>',
                 '<action:(.*)>' => 'dei/<action>',
-                
-                
             ],
         ],
     ],
@@ -80,19 +83,9 @@ $config = [
 ];
 
 if (YII_ENV_DEV) {
-    // configuration adjustments for 'dev' environment
-    //$config['bootstrap'][] = 'debug';
-    /*$config['modules']['debug'] = [
-        'class' => 'yii\debug\Module',
-        // uncomment the following to add your IP if you are not connecting from localhost.
-        //'allowedIPs' => ['127.0.0.1', '::1'],
-    ];*/
-
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-        // uncomment the following to add your IP if you are not connecting from localhost.
-        //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 }
 

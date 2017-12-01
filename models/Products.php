@@ -497,7 +497,7 @@ class Products extends Model
                             ['LIKE', 'core_products.model_other', $_REQUEST['global_search']],
                             ['LIKE', 'core_products.capacity', $_REQUEST['global_search']],
                             ['LIKE', 'core_products.current_location', $_REQUEST['global_search']]
-                    
+        
                         ]);
         }
         //filter by sort
@@ -1288,7 +1288,7 @@ class Products extends Model
                             ['LIKE', 'core_product_models.model_name', $_REQUEST['global_search']],
                     
                         ]);
-        }
+}
         
         $products = $products->andWhere("core_products.product_status = 1")
                     ->andWhere(['>=','core_products.product_expires_on',date("Y-m-d H:i:s")])

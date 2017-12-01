@@ -1,18 +1,11 @@
-<IfModule mod_rewrite.c> 
-RewriteEngine on
+Options +FollowSymLinks
+ IndexIgnore */*
 
-#RewriteCond %{REQUEST_URI} !^public
-RewriteRule ^(.*)$ web/ [L]
+ <IfModule mod_rewrite.c>
+ RewriteEngine on
 
-#RewriteCond %{REQUEST_URI} ^backend
-#RewriteRule ^(.*)$ backend/web/$1 [L]
-</IfModule>
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
 
-# Deny accessing below extensions
-<Files ~ "(.json|.lock|.git)">
-Order allow,deny
-Deny from all
-</Files>
-
-# Deny accessing dot files
-RewriteRule (^\.|/\.) - [F]
+ RewriteRule ^.*$ /index.php [L] 
+ </IfModule>

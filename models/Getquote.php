@@ -30,7 +30,7 @@ class Getquote extends Model
             $get_quote['start_date'] = date('Y-m-d', strtotime($data['start_date']));
             $get_quote['date_created'] = date('Y-m-d H:i:s');
             $get_quote['quote_status'] = 0;
-            $get_quote['capacity'] = $data['capacity'].' '.$data['capacity_metric'];
+            $get_quote['capacity_requested'] = $data['capacity_requested'].' '.$data['capacity_metric'];
             
             if($get_quote['duration_type'] == '')
                 unset($get_quote['duration_type']);
@@ -140,21 +140,21 @@ class Getquote extends Model
             Yii::warning($ex->getMessage());
         }
     }
-    
+
     public static function get_quotes_by_userid($userid)
     {
         $user_details = User::get_user_details_by_id($userid);
-        
+       
         $query = new Query;
         $quote = $query->select(['core_quotation.*','core_product_categories.category_name','core_product_sub_categories.sub_category_name','core_users.user_name as employee_name','status_users.user_name as status_updated_by'])
                     ->from('core_quotation')
                     ->innerJoin('core_product_categories', 'core_product_categories.category_id=core_quotation.category_id')
-                    ->innerJoin('core_product_sub_categories', 'core_product_sub_categories.sub_category_id=core_quotation.sub_category_id')  
+                    ->innerJoin('core_product_sub_categories', 'core_product_sub_categories.sub_category_id=core_quotation.sub_category_id') 
                     ->leftJoin('core_users', 'core_quotation.employee_id=core_users.user_id')
                     ->leftJoin('core_users as status_users', 'core_quotation.status_updated_by=status_users.user_id');
-        
+       
         return $quote = $quote->where("core_quotation.email = '$user_details->email'")->orWhere("core_quotation.phone = '$user_details->phone_number'")->orderBy(['core_quotation.quotation_id' => SORT_DESC])->All();
-    }
+    }    
     public static function get_quotes_by_employeeid($employeeid)
     {
         $query = new Query;
@@ -197,7 +197,7 @@ class Getquote extends Model
                         $quote = $quote->where(['core_quotation.employee_id' => $employeeid]); 
                     else
                         $quote = $quote->where(['core_quotation.employee_id' => $filteredemployees]); 
-                }
+}
                 else
                 {
                     return array();

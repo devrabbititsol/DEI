@@ -99,7 +99,6 @@ class DeiController extends Controller
     
     public function actionIndex()
     {
-        
         //get Products count by their category
         $cranescount = Products::select_product_count_by_category_id(1);
         $dumperscount = Products::select_product_count_by_category_id(2);
@@ -721,6 +720,17 @@ class DeiController extends Controller
                     $session = Yii::$app->session;
                     $session->set('productdetails', $_POST);
                     $session->set('payment_product_id', $session->get('current_product_id'));
+                    
+                    //get admin email
+                    $email = Yii::$app->params['ADMIN_EMAIL'];
+                    $subject="BIG EQUIPMENTS INDIA | New Equipment Registered";
+                    $product_details = Products::get_product_by_id($session->get('current_product_id'));
+                    //get what message to send after creating product
+                    $message = Mail_settings::get_product_add_message_to_admin($product_details);
+
+                    //send email to admin
+                    Mail_settings::send_email_notification($email,$subject,$message);
+                    
                     return $this->redirect(['paymentcart']);
                     
                     //Yii::$app->response->redirect(['productsuccess']);
@@ -731,10 +741,18 @@ class DeiController extends Controller
                     $_POST['product_expires_on'] = date("Y-m-d H:i:s", strtotime(Yii::$app->params['PROMOTIONAL_OFFER_UPTO']));
                     //insert new product details to database table
                     Products::insert_new_product_details($_POST);
+                    $session = Yii::$app->session;
+                    //get admin email
+                    $email = Yii::$app->params['ADMIN_EMAIL'];
+                    $subject="BIG EQUIPMENTS INDIA | New Equipment Registered";
+                    $product_details = Products::get_product_by_id($session->get('current_product_id'));
+                    //get what message to send after creating product
+                    $message = Mail_settings::get_product_add_message_to_admin($product_details);
+                    
+                    //send email to admin
+                    Mail_settings::send_email_notification($email,$subject,$message);
                     
                     /*Payments table inserts for PROMOTIONAL PRODUCT START*/
-                    $session = Yii::$app->session;
-                    
                     $userId = Yii::$app->user->id;
                     $userbillingDetails = User::get_user_details_by_id($userId);
 
@@ -877,15 +895,7 @@ class DeiController extends Controller
                     //send email to current user
                     Mail_settings::send_email_notification($email,$subject,$message);
                 }
-                //get admin email
-                $email = Yii::$app->params['ADMIN_EMAIL'];
-                $subject="BIG EQUIPMENTS INDIA | New Equipment Registered";
-                $product_details = Products::get_product_payment_by_id($session->get('current_product_id'));
-                //get what message to send after creating product
-                $message = Mail_settings::get_product_add_message_to_admin($product_details);
-
-                //send email to admin
-                Mail_settings::send_email_notification($email,$subject,$message);
+                
                 //empty current product id session value
                 $session->set('current_product_id', '');
                 
@@ -922,19 +932,8 @@ class DeiController extends Controller
                 }
                 $productdata = Products::find()->where(['product_id' => $session->get('current_product_id')])->one(); 
                 
-                //get admin email
-                $email = Yii::$app->params['ADMIN_EMAIL'];
-                $subject="BIG EQUIPMENTS INDIA | New Equipment Registered";
-                $product_details = Products::get_product_payment_by_id($session->get('current_product_id'));
-                //get what message to send after creating product
-                $message = Mail_settings::get_product_add_message_to_admin($product_details);
-
-                //send email to admin
-                Mail_settings::send_email_notification($email,$subject,$message);
-                
                 //empty current product id session value
                 $session->set('current_product_id', '');
-                
                 
                 return $this->render('//productcancelmessage', array('productdata' => $productdata,'transaction_data' => $transaction_data));
             }
@@ -1258,7 +1257,7 @@ class DeiController extends Controller
         //update advt status
         //$ad_status = Ads::update_status($session->get('ad_id'),1);//activate advt.
         
-        //$postadtofacebook = Ads::post_advt_on_facebook_wall($session->get('ad_id'));
+        #$postadtofacebook = Ads::post_advt_on_facebook_wall($session->get('ad_id'));
         
         $session->set('ad_id','');
         
@@ -1555,11 +1554,11 @@ class DeiController extends Controller
             return $this->redirect(['/']);
         }
         $params = $_REQUEST;
-        
-        //add GST 18% to amount 
+
+        #add GST 18% to amount
         $gst_amount = (Yii::$app->params['GST']/100)*$params['amount'];
         $params['amount'] = $params['amount']+$gst_amount;
-        
+
         unset($params['_csrf']);
         $params['merchant_id'] = Yii::$app->params['ccavenue_merchant_id'];
         \app\components\Ccavenue::form($params, 'auto', Yii::$app->params['PAYMENT_TYPE'], 'websites');
@@ -1729,7 +1728,7 @@ class DeiController extends Controller
             if(Yii::$app->user->id == $product['user_id'])
             {
                 $selected_product_ids = array_diff($selected_product_ids, array($product['product_id']));
-            }
+}
             $out .= '<input '
                     . ((Yii::$app->user->id != $product['user_id'] && in_array($product['product_id'], $selected_product_ids))? "checked":"")
                     . ' class="form-control styled-checkbox" type="checkbox" name="multiavailabity[]" id="multiavailabity'.$product['product_id'].'" value="'.$product['product_id'].'" '
